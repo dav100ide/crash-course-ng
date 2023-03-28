@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Task } from '../../Task';
-import { TASKS } from '../../mock-tasks';
+import { TaskService } from 'src/app/services/task.service';
 
 @Component({
    selector: 'app-tasks',
@@ -8,7 +8,13 @@ import { TASKS } from '../../mock-tasks';
    styleUrls: ['./tasks.component.scss'],
 })
 export class TasksComponent implements OnInit {
-   tasks: Task[] = TASKS;
-   constructor() {}
-   ngOnInit(): void {}
+   tasks: Task[] = [];
+   //utilizzo TaskService (lui chiamata axios) per riempire l'array tasks
+   constructor(private taskService: TaskService) {}
+   ngOnInit(): void {
+      // i subscribe to the observable so i constanlty watch it
+      this.taskService.getTasks().subscribe((tasks) => {
+         this.tasks = tasks;
+      });
+   }
 }
