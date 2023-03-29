@@ -3,13 +3,13 @@
     {
       "text": "Implementare edit di ogni singola task",
       "day": "domani o dopomani",
-      "reminder": false,
+      "reminder": true,
       "id": 7
     },
     {
       "text": "studiare routing in angular",
       "day": "dopo che ho fatto l'edit task",
-      "reminder": true,
+      "reminder": false,
       "id": 8
     },
     {
