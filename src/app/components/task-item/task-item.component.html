@@ -1,9 +1,13 @@
-<div class="task">
+<div
+   (dblclick)="OnToggle(task)"
+   [ngClass]="{ reminder: task.reminder }"
+   class="task"
+>
    <h3>
       {{ task.text }}
       <!-- cancel btn -->
       <fa-icon
-         (click)="OnDelete()"
+         (click)="OnDelete(task)"
          [ngStyle]="{ color: 'orangered' }"
          [icon]="faTimes"
       ></fa-icon>

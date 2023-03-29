@@ -5,6 +5,14 @@ import { Task } from '../Task';
 import { TASKS } from '../mock-tasks';
 //'real' api using JSON Server of npm
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+//costante per avere l'header della chiamata/request e il content type
+const httpOptions = {
+   headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+   }),
+};
+
 @Injectable({
    providedIn: 'root',
 })
@@ -19,5 +27,15 @@ export class TaskService {
 
       return this.jsonDb.get<Task[]>(this.apiUrl);
       //HttpClient returns automatically an observable
+   }
+
+   deleteTask(task: Task): Observable<Task> {
+      const url = `${this.apiUrl}/${task.id}`;
+      return this.jsonDb.delete<Task>(url);
+   }
+
+   updateTaskReminder(task: Task): Observable<Task> {
+      const url = `${this.apiUrl}/${task.id}`;
+      return this.jsonDb.put<Task>(url, task, httpOptions);
    }
 }
