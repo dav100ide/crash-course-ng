@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+/*========================
+       form
+=============================*/
+form {
+   .form-control {
+      input {
+         width: 75%;
+         padding: 0.8rem;
+         border-radius: 10px;
+         font-size: 16.5px;
+      }
+      &:not(:last-child) {
+         margin-bottom: 0.75rem;
+      }
+
+      //checkbox div
+      &.form-control-check {
+         display: flex;
+         gap: 1rem;
+         align-items: center;
+         input {
+            --size: 20px;
+            width: var(--size);
+            height: var(--size);
+         }
+      }
+   }
+   .form-control:not(.form-control-check) {
+      label {
+         display: block;
+         margin-bottom: 0.3rem;
+      }
+   }
+}
+/*========================
+       buttons
+=============================*/
+.save-btn {
+   display: inline-block;
+   background: #000;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   margin: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+   text-decoration: none;
+   font-size: 15px;
+   font-family: inherit;
+   &:focus {
+      outline: none;
+   }
+   &:active {
+      scale: 0.98;
+   }
+}
