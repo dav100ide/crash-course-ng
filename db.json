@@ -4,19 +4,13 @@
       "text": "Implementare edit di ogni singola task",
       "day": "domani o dopomani",
       "reminder": true,
-      "id": 7
+      "id": 1
     },
     {
-      "text": "studiare routing in angular",
-      "day": "dopo che ho fatto l'edit task",
+      "text": "Study Angular ",
+      "day": "29/03/2023",
       "reminder": false,
-      "id": 8
-    },
-    {
-      "text": "capire gli observables",
-      "day": "priorità bassa",
-      "reminder": false,
-      "id": 9
+      "id": 2
     }
   ]
 }

@@ -5,9 +5,12 @@
 >
    <h3>
       {{ task.text }}
-      <!-- cancel btn -->
-      <fa-icon (click)="OnDelete(task)" [icon]="faTimes"></fa-icon>
-      <!-- /cancel btn -->
+      <!--  btns group -->
+      <div class="actions">
+         <fa-icon (click)="OnEdit(task)" [icon]="faPen"></fa-icon>
+         <fa-icon (click)="OnDelete(task)" [icon]="faTimes"></fa-icon>
+      </div>
+      <!-- / btns group -->
    </h3>
    <p>{{ task.day }}</p>
 </div>
