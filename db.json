@@ -11,6 +11,12 @@
       "day": "dopo che ho fatto l'edit task",
       "reminder": true,
       "id": 8
+    },
+    {
+      "text": "capire gli observables",
+      "day": "priorità bassa",
+      "reminder": false,
+      "id": 9
     }
   ]
 }
