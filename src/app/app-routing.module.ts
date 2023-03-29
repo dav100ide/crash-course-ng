@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+//components
+import { TasksComponent } from './components/tasks/tasks.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+   { path: '', component: TasksComponent }, //stringa vuota pk è l'index (homepage)
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+   imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
+   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

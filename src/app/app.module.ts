@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-//extern modules
+//external modules
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//Internal modules
+import { AppRoutingModule } from './app-routing.module';
 // components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
