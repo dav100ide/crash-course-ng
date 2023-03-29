@@ -6,7 +6,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
    styleUrls: ['./button1.component.scss'],
 })
 export class Button1Component {
-   @Input() text!: string;
+   @Input() text: string = 'text di default';
    @Output() btnClick = new EventEmitter();
 
    onClick() {

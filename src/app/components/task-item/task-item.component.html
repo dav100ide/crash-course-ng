@@ -6,11 +6,7 @@
    <h3>
       {{ task.text }}
       <!-- cancel btn -->
-      <fa-icon
-         (click)="OnDelete(task)"
-         [ngStyle]="{ color: 'orangered' }"
-         [icon]="faTimes"
-      ></fa-icon>
+      <fa-icon (click)="OnDelete(task)" [icon]="faTimes"></fa-icon>
       <!-- /cancel btn -->
    </h3>
    <p>{{ task.day }}</p>

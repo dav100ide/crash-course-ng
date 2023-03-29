@@ -10,6 +10,10 @@
    }
    fa-icon {
       cursor: pointer;
+      color: orangered;
+      &:hover {
+         color: rgb(253, 5, 5);
+      }
    }
    & * {
       user-select: none;

@@ -23,7 +23,7 @@ export class TaskItemComponent implements OnInit {
    constructor() {}
    ngOnInit(): void {}
    OnDelete(task: Task) {
-      //al click emitto al padre task passandogli task
+      //al click emitto al padre, passandogli task
       this.onDeleteTask.emit(task);
    }
 

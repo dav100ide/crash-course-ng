@@ -1,22 +1,16 @@
 {
   "tasks": [
     {
-      "id": 4,
-      "text": "Work out at the gym",
-      "day": "July 2nd at 4:40pm",
-      "reminder": true
+      "text": "Implementare edit di ogni singola task",
+      "day": "domani o dopomani",
+      "reminder": false,
+      "id": 7
     },
     {
-      "id": 5,
-      "text": "Take out the rubbish",
-      "day": "May 18th at 8:40am",
-      "reminder": false
-    },
-    {
-      "text": "Study Angular ",
-      "day": "29/03/2023",
+      "text": "studiare routing in angular",
+      "day": "dopo che ho fatto l'edit task",
       "reminder": true,
-      "id": 6
+      "id": 8
     }
   ]
 }
