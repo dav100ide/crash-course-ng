@@ -1,18 +1,6 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "text": "Meeting at School",
-      "day": "May 6th at 1:30pm",
-      "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "Food Shopping",
-      "day": "May 7th at 12:30pm",
-      "reminder": true
-    },
-    {
       "id": 4,
       "text": "Work out at the gym",
       "day": "July 2nd at 4:40pm",
@@ -23,6 +11,12 @@
       "text": "Take out the rubbish",
       "day": "May 18th at 8:40am",
       "reminder": false
+    },
+    {
+      "text": "Study Angular ",
+      "day": "29/03/2023",
+      "reminder": true,
+      "id": 6
     }
   ]
 }

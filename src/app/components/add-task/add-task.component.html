@@ -1,15 +1,32 @@
-<form>
+<form (ngSubmit)="onSubmit()">
    <div class="form-control">
       <label for="test">Task</label>
-      <input type="text" name="text" id="text" placeholder="aggiungi task" />
+      <input
+         type="text"
+         name="text"
+         [(ngModel)]="text"
+         id="text"
+         placeholder="aggiungi task"
+      />
    </div>
    <div class="form-control">
       <label for="day">Giorno</label>
-      <input type="text" name="day" id="day" placeholder="aggiungi quando" />
+      <input
+         type="text"
+         name="day"
+         [(ngModel)]="day"
+         id="day"
+         placeholder="aggiungi quando"
+      />
    </div>
    <div class="form-control form-control-check">
       <label for="reminder">Priorità</label>
-      <input type="checkbox" name="reminder" id="reminder" />
+      <input
+         type="checkbox"
+         name="reminder"
+         [(ngModel)]="reminder"
+         id="reminder"
+      />
    </div>
    <button type="submit" value="Save Task" class="save-btn">Salva</button>
 </form>
