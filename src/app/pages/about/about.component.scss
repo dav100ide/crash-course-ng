@@ -1,0 +1,15 @@
+h3 {
+   text-align: right;
+}
+.follow-me {
+   font-size: 2rem;
+   display: flex;
+   justify-content: flex-end;
+   gap: 1.5rem;
+   fa-icon {
+      color: #232323;
+      &:hover {
+         color: rgb(19, 63, 48);
+      }
+   }
+}
