@@ -1,0 +1,15 @@
+<form *ngIf="showEditTask">
+   <div class="form-control">
+      <label for="test">Task</label>
+      <input type="text" name="text" id="text" placeholder="modifica task" />
+   </div>
+   <div class="form-control">
+      <label for="day">Giorno</label>
+      <input type="text" name="day" id="day" placeholder="modifica quando" />
+   </div>
+   <div class="form-control form-control-check">
+      <label for="reminder">Priorità</label>
+      <input type="checkbox" name="reminder" id="reminder" />
+   </div>
+   <button type="submit" value="Save Task" class="edit-btn">Edita</button>
+</form>
