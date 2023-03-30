@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Task } from '../../Task';
 import { TaskService } from '../../services/task.service';
-
+import { UiService } from 'src/app/services/ui.service';
 @Component({
    selector: 'app-tasks',
    templateUrl: './tasks.component.html',
@@ -10,7 +10,10 @@ import { TaskService } from '../../services/task.service';
 export class TasksComponent implements OnInit {
    tasks: Task[] = [];
    //utilizzo TaskService (lui chiamata axios) per riempire l'array tasks
-   constructor(private taskService: TaskService) {}
+   constructor(
+      private taskService: TaskService,
+      private uiService: UiService
+   ) {}
    ngOnInit(): void {
       // i subscribe to the observable so i constanlty watch it
       this.taskService.getTasks().subscribe((tasks) => {
@@ -34,5 +37,10 @@ export class TasksComponent implements OnInit {
       this.taskService.addTask(task).subscribe((task) => {
          this.tasks.push(task);
       });
+   }
+
+   showEditTask = false;
+   toggleEditTask(task: Task) {
+      this.showEditTask = !this.showEditTask;
    }
 }

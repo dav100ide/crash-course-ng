@@ -2,14 +2,14 @@
   "tasks": [
     {
       "text": "Implementare edit di ogni singola task",
-      "day": "domani o dopomani",
+      "day": "11",
       "reminder": true,
       "id": 1
     },
     {
       "text": "Study Angular ",
       "day": "29/03/2023",
-      "reminder": false,
+      "reminder": true,
       "id": 2
     }
   ]

@@ -18,6 +18,7 @@ export class TaskItemComponent implements OnInit {
 
    @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
    @Output() onToggleReminder: EventEmitter<Task> = new EventEmitter();
+   @Output() onPenClick: EventEmitter<Task> = new EventEmitter();
 
    faTimes = faTimes;
    faPen = faPen;
@@ -33,7 +34,7 @@ export class TaskItemComponent implements OnInit {
       this.onToggleReminder.emit(task);
    }
 
-   OnEdit(task: Task) {
-      alert("implementare l'edit");
+   OnPenClick(task: Task) {
+      this.onPenClick.emit(task);
    }
 }

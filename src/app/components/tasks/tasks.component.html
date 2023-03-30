@@ -5,6 +5,7 @@
    (onDeleteTask)="deleteTask(task)"
    (onToggleReminder)="toggleReminder(task)"
    class="task-container"
+   (onPenClick)="toggleEditTask(task)"
 >
 </app-task-item>
-<app-edit-task></app-edit-task>
+<app-edit-task *ngIf="showEditTask"></app-edit-task>
