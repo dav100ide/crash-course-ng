@@ -16,6 +16,7 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EditTaskComponent } from './components/edit-task/edit-task.component';
 
 @NgModule({
    declarations: [
@@ -28,6 +29,7 @@ import { FooterComponent } from './components/footer/footer.component';
       AboutComponent,
       NotFoundComponent,
       FooterComponent,
+      EditTaskComponent,
    ],
    imports: [
       BrowserModule,
